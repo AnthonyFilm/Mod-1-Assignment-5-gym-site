@@ -1,0 +1,373 @@
+* {
+    /* border: 1px solid red; */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+
+}
+
+strong {
+    color: aqua;
+}
+
+/* Nav bar settings */
+.brand {
+    max-width: 75px;
+    padding-top: 1em;
+    margin-top: 1rem;
+    /* z-index: -1; */
+}
+.navbar-brand {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    height: 60px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 60%;
+    height: 100%;
+}
+
+.nav-item {
+    margin: 10px;
+    width: 100%;
+    height: 100%; 
+}
+
+/* End nav bar settings */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(99, 223, 223)
+}
+
+/* Landing page settings */
+
+
+.background {
+    z-index: -1;
+    width: 100%;
+    /* height: 100%; */
+    /* margin-top: -100px; */
+    /* position: fixed; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1em;
+    padding: 2em;
+    background-image: url(static/colton-sturgeon-6KkYYqTEDwQ-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width:  70% ;
+    min-height: 300px;
+    background-position-x: -50px;
+    background-size: cover;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+img {
+    max-height: 100%;
+    height: auto;
+    object-fit:fill;
+    vertical-align: bottom;
+  }
+
+.headline {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+  
+/* About page settings */
+
+.about {
+    padding-top: 4em;
+    padding-left: 1em;
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-content: start;
+    gap: 1em;
+    background-image: url(static/shahar-pose-mod.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    min-height: 300px;
+    background-position-y: -40px ;
+    background-size: cover;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+
+}
+
+.about p {
+    background-color: rgba(128, 128, 128, 0.364);
+    padding: 1em;
+    margin: 1em;
+}
+
+.create h3 {
+    background-color: rgba(128, 128, 128, 0.623);
+    padding: 1em;
+
+}
+/* Sign-in Page settings */
+
+.sign-in-page-area {
+    padding-top: 4em;
+    padding-left: 1em;
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-content: end;
+    gap: 1em;
+    background-image: url(static/levi-xu-dOhJtfXJZfw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    min-height: 300px;
+    background-position-y: -40px ;
+    background-size: cover;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    vertical-align: bottom;
+    
+}
+
+.sign-out-page-area {
+    padding-top: 4em;
+    padding-left: 1em;
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-content: end;
+    gap: 1em;
+    background-image: url(static/farshid-zabbahi-Z913IkTZ1h4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    min-height: 300px;
+    background-position-y: -40px ;
+    background-size: cover;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    vertical-align: bottom;
+    
+}
+
+/* Sets global properties for everything above horizontal line */
+.sign-in {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;   
+}
+
+
+/* Right justifies the "Forget Password" link  */
+#forgot {
+    float: right;
+ 
+}
+
+/* Formats padding for both buttons */
+.button {
+    padding: 6px;
+}
+
+/* Formats the "Continue" button */
+#continue {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: medium;  
+    font-weight: 100;
+}
+
+/* Formats the "Sign Up Here" button */
+#create {
+    width: 80%;
+    background-color: rgb(166, 166, 166);
+    border-color: gray;
+    font-size: medium;
+    margin-bottom: 3em;
+}
+
+/* Guarantees padding for password and email input fields */
+#password, #email {
+    padding: 10px;
+}
+
+
+
+h3 {
+    display:flex;
+    flex-direction: row;
+    font-weight:100;
+    font-size: medium;
+
+
+}
+
+/* Formats the Sign In form */
+button {
+    background: rgb(152, 194, 194);
+    border:rgb(0, 0, 0) solid 1px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+form {
+    width: 80%;  
+    margin: 10px;
+    padding:10px;
+    text-align: left;
+    font-size: medium;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.623);
+    border-radius: 1em;
+}
+
+form label {
+    margin-bottom: 1em;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+form ::placeholder {
+    font-size: medium;
+    color: rgb(112, 112, 112);
+
+}
+
+input, textarea {
+    width: 95%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 20x;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(168, 168, 168);
+}
+
+
+
+/* foooter settings */
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+
+}
+
+.map {
+    height: 100%;
+}
+
+.footinfo, .footshows, .footsocials {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 10em;
+    font-size: 0.6em;
+    top: 0;
+    padding-top: 0;
+    padding-left: 1em;
+    padding-right: 2em;
+    margin-top: 0;
+    justify-content: flex-start;
+
+}
+.footshow {
+    margin: 0;
+    padding: 0;
+}
+
+
+.foothead   {
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.tiny   {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: x-small;
+}
+
+i {
+    color: aqua;
+}
+
+a {
+    margin: 0;
+    padding: 0; 
+}
+
+
+ 
